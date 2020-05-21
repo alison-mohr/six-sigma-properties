@@ -1,7 +1,42 @@
 body { 
-   background: darkgray;
+   background: rgb(1, 22, 43);
   color: white;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  margin: 0;
   padding: 10px;
+  overflow-wrap: break-word;
+}
+header, footer {
+  background-color: rgb(73, 118, 119);
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(73, 118, 119);
+  font-size: xxx-large;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgb(73, 70, 70);
+}
+header ul {
+  border: 1px;
+  margin: 5px 0; 
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 2px;
+  margin: 0 auto; 
   text-align: center;
-
+}
+header a {
+  margin: 0;
+  padding: 3px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+article div {
+  text-align: center;
 }
