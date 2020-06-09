@@ -1,32 +1,38 @@
 body { 
-   background: rgb(1, 22, 43);
-  color: white;
-  font-family: Trebuchet MS, Helvetica, sans-serif;
+  background-color: white;
+  font-family:'Rubik', sans-serif;;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   overflow-wrap: break-word;
+  width: 90%
 }
+
+#content {overflow: auto;}
+
 header, footer {
-  background-color: rgb(73, 118, 119);
-  color: white;
+  background-color:rgb(241, 241, 241);
+  color: black;
   margin: 0;
-  padding: 10px;
+  width: 100%
 }
 header h1 {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(73, 118, 119);
   font-size: xxx-large;
   margin: 0;
-  text-shadow: 2px 2px 8px rgb(73, 70, 70);
+  /*text-shadow: 2px 2px 8px rgb(73, 70, 70);*/
+  text-align: left;
 }
 header ul {
   border: 1px;
-  margin: 5px 0; 
+  margin: 1px 0; 
+  color: black; 
+  float: center;
 }
 header li {
   list-style: none;
+  color:black;
   display: inline-block;
-  padding: 2px;
+  /*padding: 2px;*/
   margin: 0 auto; 
   text-align: center;
 }
@@ -34,7 +40,7 @@ header a {
   margin: 0;
   padding: 3px;
   display: block;
-  color: white;
+  color: darkblue;
   text-decoration: none;
 }
 article div {
@@ -77,4 +83,8 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   width: 50%
+}
+
+nav {
+  text-align: center;
 }
