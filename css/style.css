@@ -47,6 +47,16 @@ article div {
   text-align: center;
 }
 
+.active {
+  border-bottom: 3px solid grau !important;
+  }
+
+  header a:hover {
+   background-color: #58595c;
+    border-radius: 10px 10px 10 10;
+    border-bottom: 1px solid gray;
+  }
+  
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
