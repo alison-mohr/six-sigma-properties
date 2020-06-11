@@ -9,18 +9,36 @@
 
 <body>
 
-<header>
-    <h1>Pay Rent</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>  
-            <li><a href="availability.html">Availabilities</a></li>
-            <li><a href="pay_rent.html">Pay Rent</a></li>
-          </ul>
-    </nav>
-</header>
+    <header>
+        <img src="images/sixSigmaLogo.png"  
+        alt="logo" width="200" float="left"> 
+          <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="availability.html">Availability</a></li>
+                <li><a href="our_properties.html">Our Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+              </ul>
+          </nav>
+      </header>
 
 <main>
+    <h2> Login to Your Account</h2>
+    <form id = "login" action= "/login" method="post">
+    <div class="two-thirds column" id="main">
+        <fieldset>
+            <legend>Login</legend>
+            <label for= "username">Username:</label>
+            <input type= "text" id="username" name="username" />
+            <label for= "pwd">Password:</label>
+            <input type= "password" id= "pwd" name="pwd"/>
+            <input type="submit" id="submit" value="submit"/>
+        </fieldset>
+    </div>    
+    </form>
+<script src="js/utilities.js"></script>
+<script src="js/submit-event.js"></script>
    
    
 </main>

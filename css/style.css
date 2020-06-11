@@ -1,62 +1,87 @@
+*{
+max-width: 100%; 
+box-sizing: border-box;
+}
+
 body { 
   background-color: white;
-  font-family:'Rubik', sans-serif;;
-  margin: 0;
-  padding: 5px;
+  font-family:'Rubik', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
   overflow-wrap: break-word;
-  width: 90%
 }
-
-#content {overflow: auto;}
-
 header, footer {
-  background-color:rgb(241, 241, 241);
+  background-color:rgb(91,91, 91);
   color: black;
   margin: 0;
-  width: 100%
+  padding: 10px;
 }
-header h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: xxx-large;
-  margin: 0;
-  /*text-shadow: 2px 2px 8px rgb(73, 70, 70);*/
-  text-align: left;
-}
+
+h1 {
+  text-decoration: underline;
+  text-align: center; 
+  font-style: oblique; 
+  font-style: bold; 
+  }
+/*
+header {
+  height:200
+}*/
+
 header ul {
-  border: 1px;
-  margin: 1px 0; 
   color: black; 
   float: center;
+  border: 10 px solid rgb(91, 91, 91);
+  /*margin: 5 px 0; 
+  padding: 2 px; */
+  overflow: hidden; 
+  background-color:rgb(91, 91, 91);
+  /*position: fixed; */
+  top: 0; 
+  width: 100%;
+  list-style-type: none; 
 }
 header li {
   list-style: none;
   color:black;
   display: inline-block;
-  /*padding: 2px;*/
-  margin: 0 auto; 
+  padding: 2 px;
   text-align: center;
+  margin: 0 auto; 
+  float: left;
+  margin-right: 40px;
 }
+
 header a {
   margin: 0;
-  padding: 3px;
+  padding: 2 px;
   display: block;
   color: darkblue;
   text-decoration: none;
+  text-align: center; 
+  padding: 14px 16 px; 
+  font-size: 20px;
 }
-article div {
-  text-align: center;
+
+header a:hover {
+  background-color: whitesmoke; 
 }
 
 .active {
-  border-bottom: 3px solid grau !important;
-  }
+  text-decoration: underline;
+}
 
-  header a:hover {
-   background-color: #58595c;
-    border-radius: 10px 10px 10 10;
-    border-bottom: 1px solid gray;
-  }
-  
+form {
+  width: 70%; 
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -93,8 +118,4 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   width: 50%
-}
-
-nav {
-  text-align: center;
 }

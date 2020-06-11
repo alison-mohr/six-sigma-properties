@@ -2,7 +2,7 @@
 <html> 
 <head>
     <title>Availability</title>
-   <!-- <script></script> tags can be added here-->
+   
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,19 +21,11 @@
 </header>
 
 <main>
+    
+    <script src="js/maintenance.js"></script> 
+    <h2>Maintenance Request</h2>
+    
 
-    <h1>Contact Us</h1>
-    <nav>
-        <ul>
-            <li><a href="availability.html">Availabilities</a></li>
-            <li><a href="resident_portal.html">Resident Portal</a></li>
-            <li><a href="pay_rent.html">Pay Rent</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-  
    <div class="container">
     <form action="action_page.php">
   
@@ -55,10 +47,12 @@
       <label for="address">Address</label>
       <input type="text" id="address" name="address" placeholder="Address">
   
-      <label for="message">Message</label>
+      <label for="message">Description of maintenance needs </label>
       <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
+    
+      <button onclick="myFunction()">Submit</button>
+      <p id="demo"></p>
+    
   
     </form>
   </div>
