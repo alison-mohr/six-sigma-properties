@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html> 
-<head>
-    <title>Availability</title>
-   <!-- <script></script> tags can be added here-->
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <header>
-        <img src="images/sixSigmaLogo.png"  
-        alt="logo" width="200" float="left"> 
-          <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="availability.html">Availability</a></li>
-                <li><a href="our_properties.html">Our Properties</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-              </ul>
-          </nav>
-      </header>
-
-<main>
-   
-   
-</main>
-
-<footer>
-    <button>Contact Us</button>
-</footer>
-
-
-
-
-<script src="js/app.js"></script>
-</body>
-</html>
-
-
-<!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript &amp; jQuery - Chapter 1: The ABC of Programming</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+
+    <title>Availability</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
+  
   <body>
-    <h1 id="header">JavaScript &amp; jQuery</h1>
-    <h2>Chapter 1: The ABC of Programming</h2>
-    <table>
-      <tr>
-        <td>1</td>
-        <td><strong>Creating a Basic JavaScript</strong></td>
-        <td><a href="add-content.html">add-content.html</a></td>
-        <td><a href="js/add-content.js">add-content.js</a></td>
-      </tr>
-    </table>
+    <script src="js/availability.js"></script>
+
+    <header>
+  
+      <nav>
+        <ul>
+           <li><a><img src="images/sixSigmaLogo.png"  
+          alt="logo" width="100" float="left"> </a></li>
+            <li><a class="active" href="index.html">Home</a></li>  
+            <li><a href="availability.html">Availability</a></li>
+            <li><a href="our_properties.html">Our Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+<main>
+<div class="custom-select" stlye="width:200px;">
+<h2> Number of Bedrooms</h2>
+  <select>
+  <option value="0">1 bedroom</option>
+  <option value="1">2 bedroom</option>
+  <option value="2">3 bedrooms</option>
+  <option value="3">4 bedrooms</option>
+  <option value="4">5+ bedrooms</option>
+</select>
+<h2> Number of Bathrooms</h2>
+<select>
+  <option value="0">1 bathroom</option>
+  <option value="1">2 bathrooms</option>
+  <option value="2">3 bathrooms</option>
+  <option value="3">4 bathrooms</option>
+  <option value="4">5+ bedrooms</option>
+</select>
+  </div>
+
+  <button onclick="apartmentFinder()">Submit </button >     
+
+</main>
+
+
+
   </body>
 </html>
