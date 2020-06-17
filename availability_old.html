@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Availability</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <script src="js/availability.js"></script>
+
+    <header>
+  
+      <nav>
+        <ul>
+           <li><a><img src="images/sixSigmaLogo.png"  
+          alt="logo" width="100" float="left"> </a></li>
+            <li><a class="active" href="index.html">Home</a></li>  
+            <li><a href="availability.html">Availability</a></li>
+            <li><a href="our_properties.html">Our Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+<main>
+<div class="custom-select" stlye="width:200px;">
+<h2> Number of Bedrooms</h2>
+<p>Select your desired number of bedrooms.</p>
+  <select>
+    <option id ="myBedrooms"
+    value="0">1 bedroom</option>
+  <option value="1">2 bedroom</option>
+  <option value="2">3 bedrooms</option>
+  <option value="3">4 bedrooms</option>
+  <option value="4">5+ bedrooms</option>
+</select>
+
+<button type="button"
+onclick="bedroomFinder()">Select</button>
+
+<p id="demo"></p>
+
+<!-- <h2> Number of Bathrooms</h2>
+<select>
+  <option value="0">1 bathroom</option>
+  <option value="1">2 bathrooms</option>
+  <option value="2">3 bathrooms</option>
+  <option value="3">4 bathrooms</option>
+  <option value="4">5+ bedrooms</option>
+</select> -->
+  </div>
+
+ <!-- <button onclick="apartmentFinder()">Submit </button >  -->   
+
+</main>
+
+
+
+  </body>
+</html>
