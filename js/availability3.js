@@ -17,6 +17,7 @@ function unitAvailability (){
   }
   else {
     alert('We only have 1, 2, 3, and 4 bedrroms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.');
+    availability = userName + ' , we only have 1, 2, 3, and 4 bedrroms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.';
   }
 
   return '<h3 style="color:black; font-size: 30px; background-color:white;">' + availability + '</h3>';
