@@ -1,4 +1,5 @@
 'use strict';
+
 var createGreeting = function() {
   var today = new Date();
   var hourNow = today.getHours();
@@ -13,26 +14,26 @@ var createGreeting = function() {
   } else {
     greeting = 'Welcome!';
   }
-
   return '<h3>'+ greeting + '</h3>';
 };
 
 
+
 var getItem = function (){
 
-  var order = prompt('Would you like to tour an apartment or townhouse?');
-  var item;
+  var tour = prompt('Would you like to tour an apartment or townhouse?');
+  var unitType;
 
-  while (order !== 'townhouse' && order !== 'apartment'){
-    order = prompt ('Please enter "townhouse" or "apartment".');
+  while (tour !== 'townhouse' && tour !== 'apartment'){
+    unitType = prompt ('Please enter "townhouse" or "apartment".');
   }
 
-  if (order === 'apartment') {
-    item = '<img src="images/apartment1.png">';
-  } else if (order === 'townhouse') {
-    item = '<img src="images/townhouse1.png">';
+  if (tour === 'apartment') {
+    unitType = '<img src="images/apartment1.png">';
+  } else if (tour === 'townhouse') {
+    unitType = '<img src="images/townhouse1.png">';
   }
-  return item;
+  return unitType;
 };
 
 var howMany = function() {
@@ -49,10 +50,11 @@ var showOrder = function() {
   var item = getItem();
   var total = howMany();
   var result = '';
-  //use this to make the number of house images display on screen
-  for(var i = 0; i < total; i++) {
+
+  for(var i = 1; i <= total; i++) {
     result = result + '<p> Unit #' + i + ' ' + item + '</p>';
   }
- 
   return result;
 };
+
+
