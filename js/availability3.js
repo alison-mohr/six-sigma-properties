@@ -16,11 +16,11 @@ function unitAvailability (){
     availability = userName + ' , we do not have any available units at this time.';
   }
   else {
-    alert('We only have 1, 2, 3, and 4 bedrroms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.');
-    availability = userName + ' , we only have 1, 2, 3, and 4 bedrroms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.';
+    alert('We only have 1, 2, 3, and 4 bedrooms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.');
+    availability = userName + ' , we only have 1, 2, 3, and 4 bedrooms available. Please refresh the page and try entering 1, 2, 3, or 4 to search for availability.';
   }
 
-  return '<h3 style="color:black; font-size: 30px; background-color:white;">' + availability + '</h3>';
+  return '<h3>' + availability + '</h3>';
 
 
 }

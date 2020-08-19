@@ -23,7 +23,7 @@ function greetingName(){
   //return greeting;
 
   //or to add styling to return values
-  return '<h1 style="color:yellow; font-size: 50px; background-color:blue;">' + greeting + '</h1>';
+  return '<h1 style="color:black; font-size: 40px; background-color:blue;">' + greeting + '</h1>';
 
 
 
