@@ -3,16 +3,17 @@
 var createGreeting = function() {
   var today = new Date();
   var hourNow = today.getHours();
+  var userName = prompt('Please enter your first name.');
   var greeting;
 
   if (hourNow > 18) {
-    greeting = 'Good evening!';
+    greeting = 'Good evening, ' + userName + ' . Welcome to Six Sigma Properties.';
   } else if (hourNow > 12) {
-    greeting = 'Good afternoon!';
+    greeting = 'Good afternoon, ' + userName + ' . Welcome to Six Sigma Properties.';
   } else if (hourNow >= 0) {
-    greeting = 'Good morning!';
+    greeting = 'Good morning, ' + userName + ' . Welcome to Six Sigma Properties.';
   } else {
-    greeting = 'Welcome!';
+    greeting = 'Welcome to Six Sigma Properties';
   }
   return '<h3>'+ greeting + '</h3>';
 };
@@ -22,15 +23,16 @@ var createGreeting = function() {
 var getItem = function (){
 
   var tour = prompt('Would you like to tour an apartment or townhouse?');
+  var lowerCaseTour = tour.toLowerCase();
   var unitType;
 
-  while (tour !== 'townhouse' && tour !== 'apartment'){
+  while (lowerCaseTour !== 'townhouse' && lowerCaseTour !== 'apartment'){
     unitType = prompt ('Please enter "townhouse" or "apartment".');
   }
 
-  if (tour === 'apartment') {
+  if (lowerCaseTour=== 'apartment') {
     unitType = '<img src="images/apartment1.png">';
-  } else if (tour === 'townhouse') {
+  } else if (lowerCaseTour === 'townhouse') {
     unitType = '<img src="images/townhouse1.png">';
   }
   return unitType;
